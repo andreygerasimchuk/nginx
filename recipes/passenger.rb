@@ -28,8 +28,6 @@ unless packages.empty?
   end
 end
 
-gem_package 'rake'
-
 gem_package 'passenger' do
   action     :install
   version    node['nginx']['passenger']['version']
